@@ -21,22 +21,22 @@ const produtos = [
     categorias: ["feminino","kit"]
   },
   {
-    nome:"Look",
+    nome:"conjunto casual",
     preco:"R$ 79,90",
     imagem:"img/look2.jpg",
     categorias:["feminino","kit"]
   },
   {
-    nome:"Look",
-    preco:"R$ 79,90",
+    nome:"Look com All stars",
+    preco:"R$ 119,90",
     imagem:"img/look3.jpg",
-    categorias:["feminino","kit"]
+    categorias:["feminino","kit","tenis"]
   },
   {
-    nome:"Look",
-    preco:"R$ 79,90",
+    nome:"look vintage",
+    preco:"R$ 119,90",
     imagem:"img/look4.jpg",
-    categorias:["masculino","kit"]
+    categorias:["masculino","kit","tenis"]
   },
   {
     nome:"Vestido",
@@ -151,6 +151,48 @@ const produtos = [
     preco:"R$ 69,90",
     imagem:"img/vestidoinf.jpeg",
     categorias:["feminino","infantil","vestido"]
+  },
+  {
+    nome:"Blusa Manga Longa",
+    preco:"R$ 59,90",
+    imagem:"img/mangalonga.webp",
+    categorias:["masculino","blusa"]
+  },
+  {
+    nome:"Tênis de corrida",
+    preco:"R$ 99,90",
+    imagem:"img/teniscorrida.webp",
+    categorias:["masculino","tenis"]
+  },
+  {
+    nome:"Blusa Social",
+    preco:"R$ 39,90",
+    imagem:"img/blusamasc.webp",
+    categorias:["masculino","blusa"]
+  },
+  {
+    nome:"Conjunto Brooklyn",
+    preco:"R$ 79,90",
+    imagem:"img/conj.webp",
+    categorias:["masculino","kit"]
+  },
+  {
+    nome:"all stars cano curto",
+    preco:"R$ 74,90",
+    imagem:"img/allstar.webp",
+    categorias:["masculino","tenis","feminino"]
+  },
+  {
+    nome:"vestido casual",
+    preco:"R$ 79,90",
+    imagem:"img/vestido.webp",
+    categorias:["feminino","vestido"]
+  },
+  {
+    nome:"vestido Marrom",
+    preco:"R$ 79,90",
+    imagem:"img/vestmarrom.webp",
+    categorias:["feminino","vestido"]
   },
 ];
 //embaralha produtos

@@ -510,3 +510,64 @@ footer {
 .card-relacionado p{
   font-weight: bold;
 }
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  /* LAYOUT PRINCIPAL (imagem + detalhes) */
+  .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  /* IMAGEM DO PRODUTO */
+  .galeria img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* DETALHES */
+  .detalhes {
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .detalhes h2 {
+    font-size: 20px;
+  }
+
+  .preco {
+    font-size: 18px;
+  }
+
+  /* TAMANHOS */
+  .tamanho {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* BOTÃO COMPRAR */
+  .comprar {
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+  }
+
+  /* POPUP */
+  .popup-box {
+    width: 90%;
+  }
+
+  /* RELACIONADOS */
+  .lista-relacionados {
+    justify-content: center;
+  }
+
+  .card-relacionado {
+    width: 45%;
+  }
+
+}
