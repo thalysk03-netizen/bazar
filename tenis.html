@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=0" data-next-head>
+   <title>Bazar Raro|As melhores peças</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+          <a href="index.html" class="logo">
+            <img src="img/icon.png" alt="logo">
+            <h1>Bazar Raro</h1>
+          </a>
+        <div class="searchbar">
+            <input type="text" id="busca" placeholder="buscar produto...">
+        </div>  
+      <nav class="navmenu">
+        <a href="carrinho.html" class="cart"><i class="fi fi-rr-shopping-cart"></i></a>
+      </nav>
+    </div>
+      <nav class="nav-bottom">
+        <a href="masc.html">Masculino</a>
+        <a href="fem.html">Feminino</a>
+        <a href="inf.html">Infantil</a>
+        <a href="tenis.html">Tenis</a>
+    </nav>
+  </header>
+    <!-- BOTÃO CARRINHO -->
+<div class="topo-carrinho" onclick="abrirCarrinho()">
+🛒 Carrinho (<span id="quantidade">0</span>)
+</div>
+
+<!-- CARRINHO LATERAL -->
+<div id="menuCarrinho" class="carrinho-lateral">
+
+    <div class="topo-menu">
+        <h2>Seu Carrinho</h2>
+        <button onclick="fecharCarrinho()">X</button>
+    </div>
+
+    <ul id="lista-carrinho"></ul>
+
+    <h3>Total: R$ <span id="total">0.00</span></h3>
+
+    <button class="btn-fechar" onclick="fecharCarrinho()">
+        Fechar Carrinho
+    </button>
+<button onclick="finalizarCompra()">Finalizar Compra</button>
+</div>
+<!-- ABA DE FILTRO--> 
+  <div class="container-busca">
+  <aside class="filtros">
+  <h3>Filtros</h3>
+  
+    <div class="filtro-item" onclick="toggleFiltro(this)" data-filtro="infantil">
+      <span>Infantil</span>
+      <i class="fi fi-rr-check"></i>
+    </div>
+    <div class="filtro-item" onclick="toggleFiltro(this)" data-filtro="feminino">
+      <span>Feminino</span>
+      <i class="fi fi-rr-check"></i>
+    </div>
+    <div class="filtro-item" onclick="toggleFiltro(this)" data-filtro="masculino">
+      <span>Masculino</span>
+      <i class="fi fi-rr-check"></i>
+    </div>
+</aside>
+  
+  <section class="produtosPag" id="lista-produtos"></section>
+</div>
+
+      <footer>
+  <div class="footer-content">
+
+    <div class="footer-box">
+      <h3>Sobre nós</h3>
+      <p>Somos um pequeno comércio local tentando abranger mais nossa área e atender diversos clientes.</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contato</h3>
+      <p>(##) #####-####</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Endereço</h3>
+      <p>Rua #######, N##</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Bazar Raro</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script>mostrarProdCat("tenis")</script>
+  
+</body>
+</html>
